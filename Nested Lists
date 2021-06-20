@@ -1,0 +1,21 @@
+if __name__ == '__main__':
+    
+    my_list = []
+    scoreList=[]
+    nameList=[]
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        nameList.append(name)
+        scoreList.append(score)
+        my_list.append([name,score])
+    
+    
+    scoreList = list(set(scoreList))
+    scoreList.sort()
+    secMinScore =scoreList[1]
+
+    my_list.sort()
+    for rList in my_list:
+        if rList[1] == secMinScore:
+            print(rList[0])
