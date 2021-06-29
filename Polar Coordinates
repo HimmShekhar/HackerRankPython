@@ -60,17 +60,10 @@ Note: The output should be correct up to 3 decimal places.
 
 
 Solution:
-
+# Enter your code here. Read input from STDIN. Print output to STDOUT
 import cmath
-s=input()
 
+r = complex(input().strip())
 
-cList = s.split('+')
-
-x=float(cList[0])
-y=float(cList[1].split('j')[0])
-
-r=abs(complex(x, y))
-sig=cmath.phase(complex(x, y))
-print(r)
-print(sig)
+print(cmath.polar(r)[0])
+print(cmath.polar(r)[1])
