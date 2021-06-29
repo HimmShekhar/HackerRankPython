@@ -2,17 +2,19 @@ Problem:
 
 Polar coordinates are an alternative way of representing Cartesian coordinates or Complex Numbers.
 
-A complex number  Capture.PNG
+A complex number 
 
-is completely determined by its real part  and imaginary part .
-Here,  is the imaginary unit.
-A polar coordinate () Capture.PNG
+z=x+yj
+
+is completely determined by its real part x and imaginary part y .
+Here, j is the imaginary unit.
+A polar coordinate ()
 
 is completely determined by modulus  and phase angle .
 
 If we convert complex number  to its polar coordinate, we find:
-: Distance from  to origin, i.e., 
-: Counter clockwise angle measured from the positive -axis to the line segment that joins  to the origin.
+r : Distance from  to origin, i.e., 
+Phase : Counter clockwise angle measured from the positive -axis to the line segment that joins  to the origin.
 
 Python's cmath module provides access to the mathematical functions for complex numbers.
 
@@ -40,8 +42,8 @@ Given number is a valid complex number
 Output Format
 
 Output two lines:
-The first line should contain the value of .
-The second line should contain the value of .
+The first line should contain the value of r .
+The second line should contain the value of Phase.
 
 Sample Input
 
